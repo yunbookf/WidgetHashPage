@@ -35,8 +35,8 @@ Just need to make some adjustments to the hash-page.min.js, hash-page.min.css an
 </div>
 ```
   
-所有的页面均需要添加 whp 和 none-whp 的 class，并指定一个默认页面加 default-whp，默认页面的作用是当页面没有 hash 或 hash 为空时显示的页面。  
-All pages need to add both whp and none-whp class and specifies a default page default-whp, the default page when the page is not hash or hash is empty the display page.  
+所有的页面均需要添加 `whp` 和 `none-whp` 的 class，并指定一个默认页面加 `default-whp` ，默认页面的作用是当页面没有 hash 或 hash 为空时显示的页面。  
+All pages need to add both `whp` and `none-whp` class and specifies a default page `default-whp`, the default page when the page is not hash or hash is empty the display page.  
   
 也可以通过添加 whp-url 属性动态载入 HTML 内容（不支持半角逗号加载多个），通过 whp-script 动态载入 JS 文件（同样地址的 JS 文件只会载入饼执行一次，有效防止重复载入重复执行的情况以及某几个子页面使用同一个类库的情况），可以通过添加半角逗号的形式来载入多个 JS 文件。  
 Also can through added whp-URL property dynamic contains into HTML content (not support half angle comma loaded multiple), through whp-script dynamic contains into JS file (also address of JS file only will contains into cake implementation once, effective prevent repeat contains into repeat implementation of situation and a several child page using with a a class library of situation), can through added half angle comma of form to contains into multiple JS file.  
