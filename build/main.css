@@ -1,0 +1,11 @@
+html,body{height: 100%; margin: 0; font-size: 14px;}
+.whp{min-height: 100%; background-color: beige; box-sizing: border-box; padding: 20px;}
+
+.button{border: solid 1px #000; padding: 10px; text-align: center; margin-top: 20px; border-radius: 20px;}
+.button.active-mt{background-color: #000; color: #FFF;}
+
+#page2Page{background-color: darkseagreen;}
+#page3Page{background-color: brown; color: #FFF;}
+#page3Page .button{border-color: #FFF;}
+#page3Page .button.active-mt{background-color: #FFF; color: #000;}
+#page4Page{background-color: gold;}

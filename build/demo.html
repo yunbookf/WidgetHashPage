@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>WidgetHashPage Demo</title>
+		<link rel="stylesheet" href="hash-page.css">
+		<link rel="stylesheet" href="main.css">
+		<script defer src="jquery-3.1.0.min.js"></script>
+		<script defer src="touch.min.js"></script>
+		<script defer src="hash-page.js"></script>
+		<script defer src="main.js"></script>
+	</head>
+	<body>
+		<div id="mainPage" class="whp default-whp none-whp">
+			PAGE 1
+			<div id="mainPageGo2" class="button">Go to PAGE 2</div>
+			<div id="mainPageGo3" class="button">Go to PAGE 3</div>
+			<div id="mainPageGoAjax" class="button">Go to AJAX PAGE</div>
+		</div>
+		<div id="page2Page" class="whp none-whp">
+			PAGE 2
+			<div class="button backBtn">Press back button or touch me to back.</div>
+		</div>
+		<div id="page3Page" class="whp none-whp">
+			PAGE 3
+			<div class="button backBtn">Press back button or touch me to back.</div>
+			<div id="page3PageGo4" class="button">Go to PAGE 4</div>
+		</div>
+		<div id="page4Page" class="whp none-whp">
+			PAGE 4
+			<div class="button backBtn">Press back button or touch me to back.</div>
+		</div>
+		<div id="ajaxPage" class="whp none-whp" whp-url="ajax.html" whp-script="ajaxScript.js,ajaxScript2.js" whp-css="ajaxCss.css">
+			Loading...
+		</div>
+	</body>
+</html>
