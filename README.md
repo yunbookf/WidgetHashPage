@@ -38,14 +38,14 @@ Just need to make some adjustments to the hash-page.min.js, hash-page.min.css an
 所有的页面均需要添加 `whp` 和 `none-whp` 的 class，并指定一个默认页面加 `default-whp` ，默认页面的作用是当页面没有 hash 或 hash 为空时显示的页面。  
 All pages need to add both `whp` and `none-whp` class and specifies a default page `default-whp`, the default page when the page is not hash or hash is empty the display page.  
   
-也可以通过添加 whp-url 属性动态载入 HTML 内容（不支持半角逗号加载多个），通过 whp-script 动态载入 JS 文件（同样地址的 JS 文件只会载入饼执行一次，有效防止重复载入重复执行的情况以及某几个子页面使用同一个类库的情况），可以通过添加半角逗号的形式来载入多个 JS 文件。  
-Also can through added whp-URL property dynamic contains into HTML content (not support half angle comma loaded multiple), through whp-script dynamic contains into JS file (also address of JS file only will contains into cake implementation once, effective prevent repeat contains into repeat implementation of situation and a several child page using with a a class library of situation), can through added half angle comma of form to contains into multiple JS file.  
+也可以通过添加 `whp-url` 属性动态载入 HTML 内容（不支持半角逗号加载多个），通过 `whp-script` 动态载入 JS 文件（同样地址的 JS 文件只会载入饼执行一次，有效防止重复载入重复执行的情况以及某几个子页面使用同一个类库的情况），可以通过添加半角逗号的形式来载入多个 JS 文件。  
+Also can through added `whp-url` property dynamic contains into HTML content (not support half angle comma loaded multiple), through `whp-script` dynamic contains into JS file (also address of JS file only will contains into cake implementation once, effective prevent repeat contains into repeat implementation of situation and a several child page using with a a class library of situation), can through added half angle comma of form to contains into multiple JS file.  
 
-通过指定 whp-css 来动态加载 css 文件，同样相同的 css 只会加载一次，可以用半角逗号分隔加载多个。  
-Dynamically load CSS files by specifying the whp-CSS, likewise the same CSS is loaded only once, you can use the half-width comma load multiple.  
+通过指定 `whp-css` 来动态加载 css 文件，同样相同的 css 只会加载一次，可以用半角逗号分隔加载多个。  
+Dynamically load CSS files by specifying the `whp-css`, likewise the same CSS is loaded only once, you can use the half-width comma load multiple.  
 
-whp-url、whp-script、whp-css 可以同时或分别出现，无要求。css 是加载完毕即应用于界面，script 会优于 html 先加载，因此要绑定 html 上面的事件的话，需要在 script 里编写 page 的 load 事件，参见下面事件一章。 
-Whp-URL, whp-script, whp-CSS can be simultaneous or separate appearance without requirements. CSS is loaded that is applied to the interface, script is better than HTML to load, so to bind HTML event above, need to write script in the page's load event, see the following chapter.  
+`whp-url`、`whp-script`、`whp-css` 可以同时或分别出现，无要求。css 是加载完毕即应用于界面，script 会优于 html 先加载，因此要绑定 html 上面的事件的话，需要在 script 里编写 page 的 load 事件，参见下面事件一章。 
+`whp-url`, `whp-script`, `whp-css` can be simultaneous or separate appearance without requirements. CSS is loaded that is applied to the interface, script is better than HTML to load, so to bind HTML event above, need to write script in the page's load event, see the following chapter.  
 
 ## 事件 / Event
 ### load
