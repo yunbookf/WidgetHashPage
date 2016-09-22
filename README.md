@@ -41,8 +41,11 @@ All pages need to add both `whp` and `none-whp` class and specifies a default pa
 也可以通过添加 `whp-url` 属性动态载入 HTML 内容（不支持半角逗号加载多个），通过 `whp-script` 动态载入 JS 文件（同样地址的 JS 文件只会载入饼执行一次，有效防止重复载入重复执行的情况以及某几个子页面使用同一个类库的情况），可以通过添加半角逗号的形式来载入多个 JS 文件。  
 Also can through added `whp-url` property dynamic contains into HTML content (not support half angle comma loaded multiple), through `whp-script` dynamic contains into JS file (also address of JS file only will contains into cake implementation once, effective prevent repeat contains into repeat implementation of situation and a several child page using with a a class library of situation), can through added half angle comma of form to contains into multiple JS file.  
   
-> `whp-script` 加载的脚步会顺序执行，而不是随意执行。  
-> Pace sequentially `whp-script` loaded execution, rather than arbitrary execution.  
+指定 `whp-url` 的页面，默认内容将是在加载中显示的内容，待加载完毕后，页面的内容会被 ajax 加载的内容替换。  
+`whp-url` specified page, the default content will be loaded in the content displayed to be loaded, the contents of the content page will be ajax loaded replacement.  
+  
+> `whp-script` 加载的脚本会顺序执行，而不是随意执行。  
+> Script `whp-script` loading sequence execution, rather than arbitrary execution.  
 
 通过指定 `whp-css` 来动态加载 css 文件，同样相同的 css 只会加载一次，可以用半角逗号分隔加载多个。  
 Dynamically load CSS files by specifying the `whp-css`, likewise the same CSS is loaded only once, you can use the half-width comma load multiple.  
