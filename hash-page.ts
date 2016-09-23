@@ -89,7 +89,8 @@ $(document).ready(function(): void {
                 }
             }
         } else {
-            alert("WidgetHashPage Error: Page not found.");
+            // alert("WidgetHashPage Error: Page not found.");
+            // 由用户自行处理，可能有他用的 hash
         }
     });
     $(window).trigger("hashchange.whp");

@@ -83,7 +83,6 @@ $(document).ready(function () {
             }
         }
         else {
-            alert("WidgetHashPage Error: Page not found.");
         }
     });
     $(window).trigger("hashchange.whp");
